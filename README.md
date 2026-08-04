@@ -1,13 +1,18 @@
-# mcp-inaturalist
+# @pipeworx/inaturalist
 
-iNaturalist MCP — citizen-science species observations (free, no auth for read-only)
+iNaturalist citizen-science observations MCP — read-only, no auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
+- `search_observations(taxon_name?, place?, year?, threatened?, quality_grade?, per_page?)` — observation search with auto-resolved taxon and place names.
+- `search_taxa(query, rank?, per_page?)` — find taxa by common or scientific name.
+- `top_species(place, year?, per_page?)` — most-observed species at a place.
+
+## Data source
+
+https://api.inaturalist.org/v1/ — public REST API, no key required for read-only.
 
 ## Quick Start
 
@@ -23,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
