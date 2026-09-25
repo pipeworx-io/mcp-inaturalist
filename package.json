@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-inaturalist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "iNaturalist MCP — citizen-science species observations (free, no auth for read-only)",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-inaturalist": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "inaturalist"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-inaturalist"
+    "url": "git+https://github.com/pipeworx-io/mcp-inaturalist.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-b35e927035f6646360088ed38e07e7f297ebeb0dfeda31b099202aa86d8e661a",
+    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
   }
 }
