@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-inaturalist",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "iNaturalist MCP — citizen-science species observations (free, no auth for read-only)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-b35e927035f6646360088ed38e07e7f297ebeb0dfeda31b099202aa86d8e661a",
-    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
+    "sourceHash": "v1-633db3f0b84bf35622757b98c3e291fd0f6d4efdc1a45b1724139bd6b8145202",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
